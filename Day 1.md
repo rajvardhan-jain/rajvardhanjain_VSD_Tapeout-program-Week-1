@@ -40,9 +40,18 @@
 
 ## L2 Introduction to iverilog and gtkwave part 1
 
+### iVerilog
+
 <img width="1276" height="639" alt="image" src="https://github.com/user-attachments/assets/8411075d-9be5-453c-8135-c1eec61b29ba" />
 
+### gtkwave
+
 <img width="1283" height="662" alt="image" src="https://github.com/user-attachments/assets/e4d97f47-6848-4612-93cb-17946f9c114e" />
+
+## L3 Introduction to iverilog and gtkwave part 2
+
+<img width="1282" height="658" alt="image" src="https://github.com/user-attachments/assets/cc6a2a49-69c4-4e93-9edc-770a57bdd1b0" />
+
 
 
 
