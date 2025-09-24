@@ -73,6 +73,75 @@
 - This stimulus should be same as output observed during RTL simulation.
 - The set of Primary inputs/ primary outputs will remain same between the RTL design and Synthesized netlist, therefore same test bench can be used.
 
+## L2 Introduction to Logic Synthesis part 1:
+
+### RTL Design:
+
+- RTL Design is the behavioural representation of the required specification.
+
+- RTL is a code and we wand a hardware circuit so,
+
+### Synthesis:
+
+- RTL to Gate level translation
+- The design is converted into gates and connections made between the gates.
+- This is given out as a file called netlist.
+
+<img width="467" height="647" alt="image" src="https://github.com/user-attachments/assets/ef5031c4-ef8f-4c60-84ca-12ab4de5a04d" />
+
+### What is .lib?
+
+- Collection of logical modules.
+- It includes all the basic gates AND, OR, NAND, EXOR....
+- Different flavours of same gate,
+- e.g a. 2 input and gate, b. 3 input and gate... etc...
+
+### Why different flavours of gate?
+
+- Combinational delay in logic path determines the maximum speed of operation of digital logic circuit.
+- T(CLK) should always be greater the  time delays cauled by Flip flops and combinational circuits comibned.
+- f(clk)max = 1/ T(clk)min
+- To get minimum Clock time period, the propogation delays and other delays should me minimum.
+
+<img width="674" height="204" alt="image" src="https://github.com/user-attachments/assets/d179027b-2445-471f-963b-cc29feb59b85" />
+
+## L3 Introduction to logic synthesis part 2:
+
+### Why we need slow cells?
+
+-  To ensure that there are no HOLD issues at DFF_B, we need cells that work slowly.
+-  Hence we need cells that work fast to meet the required performance and we need cells that work slow to meet the HOLD.
+-  The collection forms the .lib.
+
+### Faster Cells vs Slower Cells:
+
+- Load in Digital logic circuit = Capacitance.
+- Faster the charging and discharging of capacitance = Lesser the cell delay.
+- To charge/ discharge the capacitance fast, we need transistors capable of sourcing more current.
+- Wider transistors = Low Delay = More Area and Power.
+- Narrow transistors = More Dealy = Less Area and Power.
+- Faster cells come at a cost of Area and Power.
+
+### Selection of Cells:
+
+- Need to guid the synthesizer to select the flavour of cells that is optimum for the implementation of logic circuit.
+- More us of faster cells:
+- Bad circuit interms of Power and Area.
+- Hold time may be violated.
+- More use of slower cells:
+- Sluggish circuit may not meet the performance need.
+- The guidance offered to the synthesizer is known as **Contraints**
+
+<img width="1009" height="759" alt="image" src="https://github.com/user-attachments/assets/5fc3a4e7-6de8-4050-a9fd-b5129733ccbd" />
+
+
+# Labs using Yosys and SKY130PDKs:
+
+
+
+
+
+
 
 
 
