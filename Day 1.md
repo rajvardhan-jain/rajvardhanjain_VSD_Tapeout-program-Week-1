@@ -50,7 +50,13 @@
 
 ## L3 Introduction to iverilog and gtkwave part 2
 
+### vimgtk file
+
 <img width="1282" height="658" alt="image" src="https://github.com/user-attachments/assets/cc6a2a49-69c4-4e93-9edc-770a57bdd1b0" />
+
+# Introduction to Yosys and Logic synthesis
+
+
 
 
 
