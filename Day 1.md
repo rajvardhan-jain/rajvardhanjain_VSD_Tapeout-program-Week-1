@@ -27,3 +27,12 @@
 ## iVerilog based simulation flow:
 
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/90b01dbc-7992-46c7-a2d9-85530d172d44" />
+
+# L2 Introduction to lab
+
+##SKY 130 RTL
+
+<img width="807" height="594" alt="image" src="https://github.com/user-attachments/assets/1b02ccb5-dd15-49fe-9269-d93fdbd52f16" />
+
+
+
