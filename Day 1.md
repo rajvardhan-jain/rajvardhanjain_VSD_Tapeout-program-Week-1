@@ -40,21 +40,41 @@
 
 ## L2 Introduction to iverilog and gtkwave part 1
 
-### iVerilog
+### iVerilog:
 
 <img width="1276" height="639" alt="image" src="https://github.com/user-attachments/assets/8411075d-9be5-453c-8135-c1eec61b29ba" />
 
-### gtkwave
+### gtkwave:
 
 <img width="1283" height="662" alt="image" src="https://github.com/user-attachments/assets/e4d97f47-6848-4612-93cb-17946f9c114e" />
 
 ## L3 Introduction to iverilog and gtkwave part 2
 
-### vimgtk file
+### vimgtk file:
 
 <img width="1282" height="658" alt="image" src="https://github.com/user-attachments/assets/cc6a2a49-69c4-4e93-9edc-770a57bdd1b0" />
 
 # Introduction to Yosys and Logic synthesis
+
+## L1 Introduction to Yosys:
+
+### Synthesizer:
+
+-  Tool used for converting RTL to netlist, e.g Yosys
+
+### Yosys Flow:
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/8e104579-7619-4410-baed-1115279bc456" />
+
+### Verify Synthesis:
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/c033470e-a985-4190-8ceb-ab8352371e67" />
+
+- This stimulus should be same as output observed during RTL simulation.
+- The set of Primary inputs/ primary outputs will remain same between the RTL design and Synthesized netlist, therefore same test bench can be used.
+
+
+
 
 
 
