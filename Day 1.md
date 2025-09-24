@@ -130,12 +130,14 @@
 - Hold time may be violated.
 - More use of slower cells:
 - Sluggish circuit may not meet the performance need.
-- The guidance offered to the synthesizer is known as **Contraints**
+- The guidance offered to the synthesizer is known as **Contraints**.
 
 <img width="1009" height="759" alt="image" src="https://github.com/user-attachments/assets/5fc3a4e7-6de8-4050-a9fd-b5129733ccbd" />
 
 
 # Labs using Yosys and SKY130PDKs:
+
+
 
 
 
