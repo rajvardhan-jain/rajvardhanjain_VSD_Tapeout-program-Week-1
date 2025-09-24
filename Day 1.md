@@ -1,4 +1,6 @@
-# L1: Introduction to iverilog Design and Testbench
+# ▸ Introduction to Verilog RTL Design and sysnthesis
+
+## L1: Introduction to iverilog Design and Testbench
 
 ### ▸Simulator:
 
@@ -28,11 +30,22 @@
 
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/90b01dbc-7992-46c7-a2d9-85530d172d44" />
 
-# L2 Introduction to lab
+# ▸ Labs using iVerilog and gtkwave
+
+## L1 Introduction to lab
 
 ##SKY 130 RTL
 
 <img width="807" height="594" alt="image" src="https://github.com/user-attachments/assets/1b02ccb5-dd15-49fe-9269-d93fdbd52f16" />
+
+## L2 Introduction to iverilog and gtkwave part 1
+
+<img width="1276" height="639" alt="image" src="https://github.com/user-attachments/assets/8411075d-9be5-453c-8135-c1eec61b29ba" />
+
+<img width="1283" height="662" alt="image" src="https://github.com/user-attachments/assets/e4d97f47-6848-4612-93cb-17946f9c114e" />
+
+
+
 
 
 
