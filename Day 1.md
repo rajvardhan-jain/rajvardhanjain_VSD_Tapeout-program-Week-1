@@ -34,9 +34,66 @@
 
 ## L1 Introduction to lab
 
-##SKY 130 RTL
+## SKY 130 RTL
+
+Folder structure of the git clone:
+- `lib` - will contain sky130 cell library 
+- `verilog_models` - will contain standard cell verilog model
+- `verilog_files` -contains the lab experiments source files
 
 <img width="807" height="594" alt="image" src="https://github.com/user-attachments/assets/1b02ccb5-dd15-49fe-9269-d93fdbd52f16" />
+
+Design good_mux.v 
+
+```
+module good_mux (input i0 , input i1 , input sel , output reg y);
+always @ (*)
+begin
+	if(sel)
+		y <= i1;
+	else 
+		y <= i0;
+end
+endmodule
+```
+Testbench tb_good_mux.v 
+
+```
+`timescale 1ns / 1ps
+module tb_good_mux;
+	// Inputs
+	reg i0,i1,sel;
+	// Outputs
+	wire y;
+
+        // Instantiate the Unit Under Test (UUT)
+	good_mux uut (
+		.sel(sel),
+		.i0(i0),
+		.i1(i1),
+		.y(y)
+	);
+
+	initial begin
+	$dumpfile("tb_good_mux.vcd");
+	$dumpvars(0,tb_good_mux);
+	// Initialize Inputs
+	sel = 0;
+	i0 = 0;
+	i1 = 0;
+	#300 $finish;
+	end
+
+always #75 sel = ~sel;
+always #10 i0 = ~i0;
+always #55 i1 = ~i1;
+endmodule
+```
+Command to run the design and testbench
+```
+iverilog good_mux.v tb_good_mux.v
+```
+The output of the iverilog is a .vcd file and a.out file is created. By executing a.out iverilog dump the vcd file.
 
 ## L2 Introduction to iverilog and gtkwave part 1
 
@@ -45,6 +102,11 @@
 <img width="1276" height="639" alt="image" src="https://github.com/user-attachments/assets/8411075d-9be5-453c-8135-c1eec61b29ba" />
 
 ### gtkwave:
+
+Command to view the vcd file in gtkwave 
+```
+gtkwave tb_good_mux.vcd
+```
 
 <img width="1283" height="662" alt="image" src="https://github.com/user-attachments/assets/e4d97f47-6848-4612-93cb-17946f9c114e" />
 
@@ -136,6 +198,33 @@
 
 
 # Labs using Yosys and SKY130PDKs:
+
+- Synthesize Good_mux file using Yosys.
+- Do the following commands under yosys.
+
+```
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_0250_1v80.lib
+read_ verilog good_mux.v
+synth -top good_mux
+opt; clean  //optional
+abc -liberty ../lib/sky130_fd_sc_hd__tt_0250_1v80.lib
+stat        // optional
+show
+```
+<img width="1288" height="661" alt="image" src="https://github.com/user-attachments/assets/7a37b40e-c68f-49d2-89cd-c9916b1820a0" />
+
+<img width="1296" height="660" alt="image" src="https://github.com/user-attachments/assets/85b76247-06c8-4ca2-a1b4-a516b8dbcfaa" />
+
+<img width="1291" height="659" alt="image" src="https://github.com/user-attachments/assets/ad7cbf1e-1c1f-405c-896e-26a17074d1d0" />
+
+- The result comes out as,
+
+<img width="1275" height="410" alt="image" src="https://github.com/user-attachments/assets/62236b6e-d39a-4413-9fd2-bf5a9e0bbda3" />
+
+
+
+
+
 
 
 
