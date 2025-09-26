@@ -221,6 +221,17 @@ show
 
 <img width="1275" height="410" alt="image" src="https://github.com/user-attachments/assets/62236b6e-d39a-4413-9fd2-bf5a9e0bbda3" />
 
+- Checking the good mux netlist
+
+```
+write_verilog -noattr good_mux_netlist.v
+!gvim good_mux_netlist.v
+```
+<img width="1040" height="444" alt="image" src="https://github.com/user-attachments/assets/cdd6637a-fd5c-4da8-9392-c509a034e2d3" />
+
+
+
+
 
 
 
